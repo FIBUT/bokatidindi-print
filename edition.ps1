@@ -1,13 +1,13 @@
 ﻿Write-Host 'Bókatíðindi'
 
 # Download the XML file if it does not exist
-if (-not(Test-path '.\edition.xml' -PathType Leaf)) {
-    Invoke-RestMethod 'https://www.bokatidindi.is/xml_feeds/editions_for_print/current' -OutFile '.\edition.xml'
+if (-not(Test-path 'edition.xml' -PathType Leaf)) {
+    Invoke-RestMethod 'https://www.bokatidindi.is/xml_feeds/editions_for_print/current' -OutFile 'edition.xml'
 }
 
 # Load the XML file
 [System.Xml.XmlDocument]$edition_file = new-object System.Xml.XmlDocument
-$edition_file.load('.\edition.xml')
+$edition_file.load('edition.xml')
 
 # Read the cover image objects from the XML
 $xml_cover_images = $edition_file.SelectNodes('/edition/categories/category/books/book/cover_image')
