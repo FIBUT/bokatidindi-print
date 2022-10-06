@@ -23,28 +23,28 @@
 									<Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="75">
 										<xsl:copy-of select="cover_image/image" /><xsl:text>&#xa;</xsl:text>
 										<binding_types>
+											<xsl:if test="binding_types/binding_type[text()='Baðbók']">
+												<image alt="Baðbók" href="file:///assets/bað.ai"/><xsl:text> </xsl:text>
+									 		</xsl:if>
 											<xsl:if test="binding_types/binding_type[text()='Innbundin']">
 												<image alt="Innbundin" href="file:///assets/ib.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
 									 		<xsl:if test="binding_types/binding_type[text()='Sveigjanleg kápa']">
 												<image alt="Sveigjanleg kápa" href="file:///assets/svk.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
-									 		<xsl:if test="binding_types/binding_type[text()='Kilja (vasabrot)']">
+									 		<xsl:if test="binding_types/binding_type[text()='Kilja">
 												<image alt="Kilja" href="file:///assets/kil.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
-									 		<xsl:if test="binding_types/binding_type[text()='Baðbók']">
-												<image alt="Baðbók" href="file:///assets/bað.ai"/><xsl:text> </xsl:text>
-									 		</xsl:if>
+											 <xsl:if test="binding_types/binding_type[text()='Gormabók">
+											 <image alt="Kilja" href="file:///assets/gor.ai"/><xsl:text> </xsl:text>
+										  	</xsl:if>
 									 		<xsl:if test="binding_types/binding_type[text()='Harðspjaldabók fyrir 0-2 ára']">
 												<image alt="Harðspjaldabók" href="file:///assets/hsp.ai"/><xsl:text> </xsl:text>
-									 		</xsl:if>
-									 		<xsl:if test="binding_types/binding_type[text()='Endurútgáfa']">
-												<image alt="Endurútgáfa" href="file:///assets/eút.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
 									 		<xsl:if test="binding_types/binding_type[text()='Rafbók']">
 												<image alt="Rafbók" href="file:///assets/raf.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
-									 		<xsl:if test="binding_types/binding_type[text()='hljóðbók']">
+									 		<xsl:if test="binding_types/binding_type[text()='Hljóðbók']">
 												<image alt="Hljóðbók" href="file:///assets/hlb.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
 									 	</binding_types>
@@ -106,7 +106,7 @@
 												</xsl:if>
 											</book_length><xsl:text>&#xa;</xsl:text>
 										</xsl:if>
-									 	<xsl:copy-of select="publisher/publisher_name" /><xsl:text>&#xa;</xsl:text>
+									 	<xsl:copy-of select="publisher/publisher_name" />
 									 </Cell>
 								</Table>
 							</book><xsl:text>&#xa;</xsl:text>
