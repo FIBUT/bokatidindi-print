@@ -32,10 +32,10 @@
 									 		<xsl:if test="binding_types/binding_type[text()='Sveigjanleg kápa']">
 												<image alt="Sveigjanleg kápa" href="file:///assets/svk.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
-									 		<xsl:if test="binding_types/binding_type[text()='Kilja">
+									 		<xsl:if test="binding_types/binding_type[text()='Kilja']">
 												<image alt="Kilja" href="file:///assets/kil.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
-											 <xsl:if test="binding_types/binding_type[text()='Gormabók">
+											 <xsl:if test="binding_types/binding_type[text()='Gormabók']">
 											 <image alt="Kilja" href="file:///assets/gor.ai"/><xsl:text> </xsl:text>
 										  	</xsl:if>
 									 		<xsl:if test="binding_types/binding_type[text()='Harðspjaldabók fyrir 0-2 ára']">
