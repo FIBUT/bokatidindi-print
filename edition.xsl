@@ -59,31 +59,7 @@
 										</xsl:if>
 										<authors>
 											<xsl:for-each select="authors/author_group">
-												<xsl:if test="author_type!='Höfundur' and author_type!='Höfundar'">
-													<xsl:choose>
-														<xsl:when test="author_type='Myndhöfundur' or author_type='Myndhöfundar'">
-															<author_type><xsl:text>Myndh: </xsl:text></author_type>
-														</xsl:when>
-														<xsl:when test="author_type='Þýðandi' or author_type='Þýðendur'">
-															<author_type><xsl:text>Þýð: </xsl:text></author_type>
-														</xsl:when>
-														<xsl:when test="author_type='Endursögn'">
-															<author_type><xsl:text>Endurs: </xsl:text></author_type>
-														</xsl:when>
-														<xsl:when test="author_type='Skrásetning' or author_type='Þýðendur'">
-															<author_type><xsl:text>Skrás: </xsl:text></author_type>
-														</xsl:when>
-														<xsl:when test="author_type='Umsjón'">
-															<author_type><xsl:text>Umsj: </xsl:text></author_type>
-														</xsl:when>
-														<xsl:when test="author_type='Myndaritstjórn'">
-															<author_type><xsl:text>Myndaritstj: </xsl:text></author_type>
-														</xsl:when>
-														<xsl:otherwise>
-															<author_type><xsl:value-of select="author_type"/><xsl:text>: </xsl:text></author_type>
-														</xsl:otherwise>
-													</xsl:choose>
-												</xsl:if>
+												<author_type><xsl:value-of select="author_type"/><xsl:text>: </xsl:text></author_type>
 												<author_name><xsl:value-of select="author_names"/></author_name>
 												<xsl:text>&#xa;</xsl:text>
 											</xsl:for-each>
