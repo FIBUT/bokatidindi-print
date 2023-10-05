@@ -4,7 +4,7 @@ var yUnits = app.activeDocument.viewPreferences.verticalMeasurementUnits;
 app.activeDocument.viewPreferences.horizontalMeasurementUnits = MeasurementUnits.MILLIMETERS;
 app.activeDocument.viewPreferences.verticalMeasurementUnits   = MeasurementUnits.MILLIMETERS;
 
-app.activeDocument.stories.everyItem().tables.everyItem().rows[0].height = '12p';
+app.activeDocument.sFitories.everyItem().tables.everyItem().rows[0].height = '11p8,598';
 
 var images = app.activeDocument.allGraphics;
 for (var i=0; i<images.length; i++) {
