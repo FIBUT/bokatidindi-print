@@ -20,7 +20,7 @@
 						<xsl:for-each select="books/book">
 							<book>
 								<Table aid:table="table" aid:trows="1" aid:tcols="2">
-									<Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="75">
+									<Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="78.661" aid5:cellstyle="Book Thumbnail Cell">
 										<xsl:copy-of select="cover_image/image" /><xsl:text>&#xa;</xsl:text>
 										<binding_types>
 											<xsl:if test="binding_types/binding_type[text()='Baðbók']">
@@ -49,7 +49,7 @@
 									 		</xsl:if>
 									 	</binding_types>
 									</Cell>
-									 <Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="175">
+									 <Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="183.54">
 									 	<xsl:if test="pre_title!=''">
 									 		<xsl:copy-of select="pre_title"></xsl:copy-of><xsl:text>&#xa;</xsl:text>
 										</xsl:if>
