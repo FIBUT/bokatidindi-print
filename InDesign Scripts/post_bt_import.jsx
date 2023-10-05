@@ -14,9 +14,10 @@ for (var i=0; i<images.length; i++) {
             images[i].verticalScale   *= 1.2;
             images[i].parent.fit(FitOptions.FRAME_TO_CONTENT);
 
-            var altText = images[i].associatedXMLElement.xmlAttributes.itemByName('alt').value;            
+            var altText = images[i].associatedXMLElement.xmlAttributes.itemByName('alt').value;
             images[i].parent.objectExportOptions.customAltText = altText;
             images[i].parent.objectExportOptions.altTextSourceType = SourceType.SOURCE_CUSTOM;
+            images[i].parent.appliedObjectStyle = document.objectStyles.itemByName('category_thumbnail');
             break;
         case 'TIFF':
             images[i].parent.appliedObjectStyle = document.objectStyles.itemByName('book_image');
