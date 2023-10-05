@@ -1,3 +1,4 @@
 *.pdf
 *.idlk
 cover_images/*.tiff
+*.xml
