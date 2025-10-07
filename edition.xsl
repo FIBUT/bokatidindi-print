@@ -78,6 +78,7 @@
 													<xsl:text> / </xsl:text>
 												</xsl:if>
 												<xsl:if test=" hours">
+													<xsl:value-of select="hours"></xsl:value-of>
 													<xsl:text> klst.</xsl:text>
 												</xsl:if>
 											</book_length><xsl:text>&#xa;</xsl:text>
