@@ -47,6 +47,12 @@
 									 		<xsl:if test="binding_types/binding_type[text()='Hljóðbók']">
 												<image alt="Hljóðbók" href="file:///assets/hlb.ai"/><xsl:text> </xsl:text>
 									 		</xsl:if>
+											<xsl:if test="binding_types/binding_type[text()='Tímarit']">
+												<image alt="Hljóðbók" href="file:///assets/tim.ai"/><xsl:text> </xsl:text>
+									 		</xsl:if>
+											<xsl:if test="binding_types/binding_type[text()='Landakort']">
+												<image alt="Hljóðbók" href="file:///assets/lko.ai"/><xsl:text> </xsl:text>
+									 		</xsl:if>
 									 	</binding_types>
 									</Cell>
 									 <Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="183.54">
